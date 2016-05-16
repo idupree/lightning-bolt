@@ -2,10 +2,11 @@
 This is a simple web page that lets you cartoon-simulate
 a lightning bolt striking.
 
-Try it, if sounds and visual flashing are okay for you:
+Try it:
 https://www.idupree.com/lightning-bolt
+(sound, visual flashing)
 
-Some notes on design decisions:
+## Some notes on design decisions
 
 ### Lightning
 
@@ -17,7 +18,7 @@ color changes:
 - make the lightning bolt's `#fff` color be brighter
     than anything else on the screen
 
-### User expectations/warnings:
+### User expectations/warnings
 
 Warn the user in many different ways that clicking
 will produce sounds and flickering, because sounds
