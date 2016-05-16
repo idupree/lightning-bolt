@@ -18,12 +18,15 @@ color changes:
 - make the lightning bolt's `#fff` color be brighter
     than anything else on the screen
 
+For more details about the timing of flashes
+and audio, see comments in `lightning-bolt.js`.
+
 ### User expectations/warnings
 
-Warn the user in many different ways that clicking
-will produce sounds and flickering, because sounds
-are often rude, and flickering is dangerous for some
-people (photosensitive epilepsy).
+This page warns the user in many different ways that
+clicking will produce sounds and flickering, because
+sounds are often rude, and flickering is dangerous for
+some people (photosensitive epilepsy).
 
 The click target has an audio symbol on it;
 the symbol's alt text is [sound].  The click target
