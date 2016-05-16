@@ -59,3 +59,8 @@ and the text does serve some functions.)
 
 Tested in facebook; custom image set by the `link rel="image_src"`.
 
+### Note
+
+The `AUTOHEAD` and the `?rr` on resource links are for my website's
+infrastructure; they have no effect otherwise.
+
