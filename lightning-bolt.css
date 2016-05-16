@@ -1,0 +1,89 @@
+ /* CSS reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,
+legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0;}
+img{color:transparent;font-size:0;border:0;vertical-align:middle;}
+
+h1 {
+  font-size: 200%;
+  margin: 0.67em 0;
+  font-variant: small-caps;
+}
+p {
+  margin: 1em 0;
+}
+a:link { color: #00f; }
+a:visited { color: #c0c; }
+
+/* colors, pane centering */
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #006;
+  background-color: #000;
+  text-align: center;
+}
+html.lightningstriking, html.lightningstriking body {
+  background-color: #aaa;
+}
+
+div.post {
+  width: 80%;
+  height: 100%;
+  display: table;
+  margin: 0 auto;
+  background-color: #abc;
+}
+html.lightningstriking div.post {
+  background-color: #fcf;
+}
+
+div.cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+div.contents {
+  border-radius: 20px;
+  background: #8e4;
+  display: inline-block;
+  padding: 3em;
+}
+html.lightningstriking div.contents {
+  background-color: #f1b;
+}
+
+/* button that triggers the lightning */
+a.lightningbolt {
+  border: 2px solid #f0a;
+  background-image: url("lightning-bolt/lightningbolt-64x64.png?rr");
+  width: 64px;
+  height: 64px;
+  display: inline-block;
+}
+a.lightningbolt:hover, a.lightningbolt:focus {
+  border-color: #f1b;
+  background-image: url("lightning-bolt/lightningbolt-expands-glow-64x64.png?rr");
+}
+
+/* the striking lightning bolt itself */
+.bolt {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  top: 0;
+  left: 40%;
+  display: none;
+}
+html.lightningstriking .bolt {
+  display: inline-block;
+}
+
+/* An element required by jPlayer, with no visible contents
+but not display:none.  The location affects where tools like
+NoScript show an icon that can let the user enable the sound
+if the user wants to. The location does not usually make
+a difference. */
+.invisibleMedia {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
